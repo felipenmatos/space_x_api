@@ -5,11 +5,6 @@ const { MongoClient } = require("mongodb");
 const dbName = "myProject";
 const client = new MongoClient(MONGO_CNSTRING);
 
-function baseData() {
-  const result = main();
-  return result;
-}
-
 var dados = [];
 
 async function main() {
