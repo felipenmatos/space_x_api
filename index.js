@@ -8,4 +8,4 @@ app.use(cors({ origin: port }));
 app.use(express.json());
 app.use(roteador);
 
-app.listen(8000);
+app.listen(port);
