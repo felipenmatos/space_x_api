@@ -12,4 +12,18 @@ function consultData(req, res) {
   res.json(dados);
 }
 
-module.exports = { consultData, message };
+function pagesData(req, res) {
+  res.header("Access-Control-Allow-Origin", "*");
+
+  if (dados.length === 0) {
+    return res.status(400).send({
+      message: "Database connection error",
+    });
+  }
+
+  setTimeout(() => {
+    res.json(dados);
+  }, 2000);
+}
+
+module.exports = { consultData, message, pagesData };
