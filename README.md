@@ -6,6 +6,10 @@ O projeto consiste em um desenvolvimento do aplicativo Web e Mobile CLIMATEMPO, 
 
 ## Deploy da API : https://api-weather-search.herokuapp.com/locales
 
+## Imagem da arquitetura desenvolvida no MIRO:
+
+![Arquitetura](https://user-images.githubusercontent.com/82072640/204061541-b9326671-a8ad-4040-b481-665d93ffe2b4.jpg)
+
 ## Inicialização do Projeto:
 
 Inicialização pelo Docker criando a imagem ou utilizando o nodemon, basta dar o npm install e startar.
