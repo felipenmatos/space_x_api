@@ -143,28 +143,89 @@ function consultStatus(req, res) {
         fail: filtroFail,
       },
       rockets: {
-        falcon: filtroFalcon.length,
-        crs: filtroCRS.length,
-        asia: filtroASIA.length,
-        star: filtroSTAR.length,
-        transporter: filtroTransporter.length,
+        falcon: {
+          name: "Falcon",
+          number: filtroFalcon.length,
+        },
+        crs: {
+          name: "CRS",
+          number: filtroCRS.length,
+        },
+        asia: {
+          name: "AsiaSat",
+          number: filtroASIA.length,
+        },
+        star: {
+          name: "Starlink",
+          number: filtroSTAR.length,
+        },
+        transporter: {
+          name: "Transporter",
+          number: filtroTransporter.length,
+        },
       },
       years: {
-        2010: filtro2010.length,
-        2012: filtro2012.length,
-        2013: filtro2013.length,
-        2014: filtro2014.length,
-        2015: filtro2015.length,
-        2016: filtro2016.length,
-        2017: filtro2017.length,
-        2018: filtro2018.length,
-        2019: filtro2019.length,
-        2020: filtro2020.length,
-        2021: filtro2021.length,
-        2022: filtro2022.length,
+        2010: {
+          year: "2010",
+          number: filtro2010.length,
+        },
+        2012: {
+          year: "2012",
+          number: filtro2012.length,
+        },
+        2013: {
+          year: "2013",
+          number: filtro2013.length,
+        },
+        2014: {
+          year: "2014",
+          number: filtro2014.length,
+        },
+        2015: {
+          year: "2015",
+          number: filtro2015.length,
+        },
+        2016: {
+          year: "2016",
+          number: filtro2016.length,
+        },
+        2017: {
+          year: "2017",
+          number: filtro2017.length,
+        },
+        2018: {
+          year: "2018",
+          number: filtro2018.length,
+        },
+        2019: {
+          year: "2019",
+          number: filtro2019.length,
+        },
+        2020: {
+          year: "2020",
+          number: filtro2020.length,
+        },
+        2021: {
+          year: "2021",
+          number: filtro2021.length,
+        },
+        2022: {
+          year: "2022",
+          number: filtro2022.length,
+        },
       },
     },
   });
 }
 
-module.exports = { consultData, message, consultStatus };
+function consultRocket(req, res) {
+  res.header("Access-Control-Allow-Origin", "*");
+
+  const cursor = dados[0]
+    .find(req.params.textName)
+    .limit(req.params.req.params.numberLimit);
+
+  res.json(cursor.forEach(console.dir));
+}
+
+module.exports = { consultData, message, consultStatus, consultRocket };
