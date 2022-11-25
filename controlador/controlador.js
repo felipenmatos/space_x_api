@@ -167,51 +167,51 @@ function consultStatus(req, res) {
       years: {
         dateone: {
           year: "2010",
-          number: filtro2010.length,
+          numbers: filtro2010.length,
         },
         datetwo: {
           year: "2012",
-          number: filtro2012.length,
+          numbers: filtro2012.length,
         },
         datethree: {
           year: "2013",
-          number: filtro2013.length,
+          numbers: filtro2013.length,
         },
         datefour: {
           year: "2014",
-          number: filtro2014.length,
+          numbers: filtro2014.length,
         },
         datefive: {
           year: "2015",
-          number: filtro2015.length,
+          numbers: filtro2015.length,
         },
         datesix: {
           year: "2016",
-          number: filtro2016.length,
+          numbers: filtro2016.length,
         },
         dateseven: {
           year: "2017",
-          number: filtro2017.length,
+          numbers: filtro2017.length,
         },
         dateeight: {
           year: "2018",
-          number: filtro2018.length,
+          numbers: filtro2018.length,
         },
         dateten: {
           year: "2019",
-          number: filtro2019.length,
+          numbers: filtro2019.length,
         },
         dateeleven: {
           year: "2020",
-          number: filtro2020.length,
+          numbers: filtro2020.length,
         },
         datetwelve: {
           year: "2021",
-          number: filtro2021.length,
+          numbers: filtro2021.length,
         },
         datethirteen: {
           year: "2022",
-          number: filtro2022.length,
+          numbers: filtro2022.length,
         },
       },
     },
