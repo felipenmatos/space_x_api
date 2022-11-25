@@ -165,51 +165,51 @@ function consultStatus(req, res) {
         },
       },
       years: {
-        year2010: {
+        dateone: {
           year: "2010",
           number: filtro2010.length,
         },
-        2012: {
+        datetwo: {
           year: "2012",
           number: filtro2012.length,
         },
-        2013: {
+        datethree: {
           year: "2013",
           number: filtro2013.length,
         },
-        2014: {
+        datefour: {
           year: "2014",
           number: filtro2014.length,
         },
-        2015: {
+        datefive: {
           year: "2015",
           number: filtro2015.length,
         },
-        2016: {
+        datesix: {
           year: "2016",
           number: filtro2016.length,
         },
-        2017: {
+        dateseven: {
           year: "2017",
           number: filtro2017.length,
         },
-        2018: {
+        dateeight: {
           year: "2018",
           number: filtro2018.length,
         },
-        2019: {
+        dateten: {
           year: "2019",
           number: filtro2019.length,
         },
-        2020: {
+        dateeleven: {
           year: "2020",
           number: filtro2020.length,
         },
-        2021: {
+        datetwelve: {
           year: "2021",
           number: filtro2021.length,
         },
-        2022: {
+        datethirteen: {
           year: "2022",
           number: filtro2022.length,
         },
