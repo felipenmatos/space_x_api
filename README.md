@@ -22,10 +22,16 @@ GET /launches = https://spacex-coodesh.herokuapp.com/launches
 
 GET /status = https://spacex-coodesh.herokuapp.com/launches/status
 
+Swagger /docs = https://spacex-coodesh.herokuapp.com/docs/
+
 # Desenvolvimento:
 
 O projeto teve como arquitetura de desenvolvimento, NodeJs + Express, no qual foi desenvolvido o servidor se comunicando com o reteador que tem seus respectivos endoints validado com os controladores, onde estar inseridos todas as funções e tratamentos.
 O banco de dados foi desenvolvido utilizando o MongoDB, passando informações necessárias através de um JSON e se conectando com o projeto atráves do arquivo data.js
+
+# Swagger: 
+
+[swagger.webm](https://user-images.githubusercontent.com/82072640/204068064-3f4cd45c-2fa8-4d52-8581-8a6da889439e.webm)
 
 # Imagens de resposta da API
 
