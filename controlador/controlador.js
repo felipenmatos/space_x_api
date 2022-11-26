@@ -218,14 +218,4 @@ function consultStatus(req, res) {
   });
 }
 
-function consultRocket(req, res) {
-  res.header("Access-Control-Allow-Origin", "*");
-
-  const cursor = dados[0]
-    .find(req.params.textName)
-    .limit(req.params.req.params.numberLimit);
-
-  res.json(cursor.forEach(console.dir));
-}
-
-module.exports = { consultData, message, consultStatus, consultRocket };
+module.exports = { consultData, message, consultStatus };
