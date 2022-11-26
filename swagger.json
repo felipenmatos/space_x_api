@@ -1,0 +1,52 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "REST API",
+    "description": ""
+  },
+  "host": "localhost:3000",
+  "basePath": "/",
+  "schemes": ["http"],
+  "paths": {
+    "/": {
+      "get": {
+        "description": "Busca inicial do projeto com mensagem receptiva",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/launches": {
+      "get": {
+        "description": "Busca pelo detalhamento do banco de dados, com listagem dos lançamentos",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Failed to connect to the database"
+          }
+        }
+      }
+    },
+    "/launches/status": {
+      "get": {
+        "description": "Busca pelo status dos lançamentos em resumo para implementação no gráfico",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Failed to connect to the database"
+          }
+        }
+      }
+    }
+  }
+}
